@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Updating your SigEp Member Record</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="">
+    <span class="preheader"><singleline label="Preheader Text">We want to stay in touch! Some of your information may be out of date.</singleline></span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          
+          <div class="webversion-link">
+            Can't see images? Try the <webversion>web version</webversion> of this email.
+          </div>
+          
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <tr>
+                <td>
+                  <img src="images/record-update-email-header.png" alt="Update Your SigEp Member Record" />
+                </td>
+              </tr>
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <multiline label='Main Message Body'>
+                        <p>We regularly get an update from headquarters for our alumni lists, but they are usually out of date, with some not being updated since you left Martin. Keeping your mailing and email address up to date means that you won't miss copies of the <em>SigEp Journal</em> and on chapter updates from Tennessee Kappa.</p>
+                        </multiline>
+                        <hr />
+                        <h3 class="align-center">Your Member Record</h3>
+                        <hr />
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td colspan="2">
+                                <strong>Full Name:</strong> [FirstName1] [MiddleName] [LastName1]<br />
+                                <strong>Preferred Name:</strong> [PreferredName]<br />
+                                <strong>Chapter Roll #:</strong> [LocalIdentifierShort,fallback=Missing!]<br />
+                                <strong>Class Year:</strong> [classYear,fallback=Missing!]
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><hr /></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <strong>Member of the <a href="https://donorbox.org/the-1901-club">1901 Club</a>?</strong>
+                                [ifmemberof:"Members|1901 Club"]Yes![else]Not yet, but you can <a href="https://donorbox.org/the-1901-club">join today</a>!.[endif]
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><hr /></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <strong>Mailing Address:</strong><br />
+                                [MailingAddressLine1,fallback=Missing!]<br />
+                                [if:MailingAddressLine2][MailingAddressLine2]<br />[endif]
+                                [if:MailingCity][MailingCity], [MailingState] [MailingPostalCode][endif]
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><hr /></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <strong>Primary Email Address:</strong><br />
+                                [email,fallback=Missing!]<br />
+                                <strong>Primary Telephone Number:</strong></br>
+                                [PrimaryTelephoneNumber,fallback=Missing!]
+                              </td>
+                              <td>
+                                <strong>Employer:</strong><br />
+                                [Employer,fallback=Missing!]<br />
+                                <strong>Job Title:</strong><br />
+                                [JobTitle,fallback=Missing!]<br />
+                                <strong>Occupation/Industry:</strong><br />
+                                [Occupation,fallback=Missing!]
+                              </td>
+                            </td>
+                          </tbody>
+                        </table>
+                        <hr />
+                        
+                        <p class="align-center"><singleline><strong><a href="https://directory.utmsigep.org/update-my-info">I need to correct some of my information</a>.</strong></singleline></p>
+                        
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">Tennessee Kappa Alumni &amp; Volunteer Corp.
+                    <br />PO Box 60901, Nashville TN 37206-0901</span>
+                    <br />
+                    <br /><forwardtoafriend>Forward this email to a friend</forwardtoafriend>.
+                    <br /><unsubscribe>Unsubscribe</unsubscribe> or <preferences>Manage My Preferences</preferences>
+                  </td>
+                </tr>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
