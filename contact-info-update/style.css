@@ -87,13 +87,16 @@ table {
 /* -------------------------------------
     TYPOGRAPHY
 ------------------------------------- */
+body {
+  font-family: 'Istok Web', sans-serif;
+}
 h1,
 h2,
 h3,
 h4 {
   color: #000000;
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 0.25em; 
@@ -107,7 +110,7 @@ h1 {
 p,
 ul,
 ol {
-  font-family: Georgia, Times, serif;
+  font-family: 'Istok Web', sans-serif;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -152,7 +155,6 @@ a {
     margin: 0;
     padding: 12px 25px;
     text-decoration: none;
-    text-transform: capitalize; 
 }
 .btn-primary table td {
   background-color: #ee3224; 
