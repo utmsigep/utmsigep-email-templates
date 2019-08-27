@@ -40,11 +40,13 @@
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <div style="margin-bottom: 2rem; width:100%">
+                        <repeater>
+                        <layout label="Hero Image">
+                        <div class="mb1" style="width:100%">
                           <img src="https://via.placeholder.com/650x400" width="650" alt="Image" style="height:auto;" editable />
                           <singleline label="Caption">Caption</singleline>
                         </div>
-                        <repeater>
+                        </layout>
                         <layout label="Image Right">
                         <singleline label="Main Heading"><h2 class="mb1">Headline</h2></singleline>
                         <div style="float:right;margin: 0 0 2rem 2rem; width:50%">
