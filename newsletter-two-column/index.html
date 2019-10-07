@@ -56,7 +56,7 @@
                           </layout>
                           <layout label="Left Photo">
                             <singleline label="Heading"><h2 class="mb1">Heading</h2></singleline>
-                            <div style="float:left;margin-right:1em;margin-bottom:1em;"><img src="https://placehold.it/200x150" alt="Image" width="150" editable /></div>
+                            <div style="float:left;margin-right:1em;" class="mb1"><img src="https://placehold.it/150x200" alt="Image" width="150" editable /></div>
                             <multiline label="Body Text">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </multiline>
@@ -64,7 +64,7 @@
                           </layout>
                           <layout label="Right Photo">
                             <singleline label="Heading"><h2 class="mb1">Heading</h2></singleline>
-                            <div style="float:right;margin-left:1em;bottom:1em;"><img src="https://placehold.it/200x150" alt="Image" width="150" editable /></div>
+                            <div style="float:right;margin-left:1em;" class="mb1"><img src="https://placehold.it/150x200" alt="Image" width="150" editable /></div>
                             <multiline label="Body Text">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </multiline>
@@ -77,8 +77,8 @@
                           <layout label="With Image">
                           <div class="sidebar-block">
                             <div>
-                                <img src="https://placehold.it/250x100" style="margin-bottom:1em;" width="250" editable>
-                                <singleline><h3>Sidebar</h3></singleline>
+                                <img src="https://placehold.it/300x100" style="mb1" alt="Image" width="300" editable>
+                                <singleline><h3 class="mb1">Sidebar</h3></singleline>
                                 <multiline>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </multiline>
@@ -88,7 +88,7 @@
                           <layout label="No Image">
                           <div class="sidebar-block">
                             <div>
-                                <singleline><h3>Sidebar</h3></singleline>
+                                <singleline><h3 class="mb1">Sidebar</h3></singleline>
                                 <multiline>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </multiline>
@@ -101,7 +101,8 @@
                           <h2 class="mb1">Your Member Record</h2>
                           <p>
                             <strong>Chapter Roll #:</strong> [LocalIdentifierShort,fallback=Missing!]<br />
-                            <strong>Class Year:</strong> [classYear,fallback=Missing!]
+                            <strong>Class Year:</strong> [classYear,fallback=Missing!]<br />
+                            <strong>Phone:</strong> [PrimaryTelephoneNumber,fallback=Missing!]
                           </p>
                           <p>
                             <strong>Mailing Address:</strong><br />

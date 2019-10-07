@@ -99,16 +99,24 @@ table {
   width: 250px;
 }
   .sidebar .sidebar-block {
+    border-radius: 5px;
     margin: 5px;
     padding: 5px;
     background-color: #ffffff;
   }
-  .sidebar .sidebar-block > div {
-
-  }
   .sidebar .sidebar-info-update {
-    margin-top: 1em;
-    background-color: #cdfce0 ;
+    padding-top: 1em;
+    background-color: #f9f9f9;
+  }
+  .sidebar .sidebar-info-update h2 {
+    border-radius: 5px;
+    padding: 4px;
+    background-color: purple ;
+    color: white;
+  }
+  .sidebar .sidebar-info-update .btn a {
+    font-size: 90%;
+    padding: 10px 25px;
   }
 
 /* -------------------------------------
