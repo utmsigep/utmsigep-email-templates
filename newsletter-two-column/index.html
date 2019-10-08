@@ -77,7 +77,7 @@
                           <layout label="With Image">
                           <div class="sidebar-block">
                             <div>
-                                <img src="https://placehold.it/300x100" style="mb1" alt="Image" width="300" editable>
+                                <img src="https://placehold.it/225x100" style="mb1" alt="Image" width="225" editable>
                                 <singleline><h3 class="mb1">Sidebar</h3></singleline>
                                 <multiline>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -98,15 +98,15 @@
                         </repeater>
                         [if:ExternalIdentifier]
                         <div class="sidebar-block sidebar-info-update">
-                          <h2 class="mb1">Your Member Record</h2>
+                          <h3 class="mb1">Your Member Record</h3>
                           <p>
-                            <strong>Chapter Roll #:</strong> [LocalIdentifierShort,fallback=Missing!]<br />
-                            <strong>Class Year:</strong> [classYear,fallback=Missing!]<br />
-                            <strong>Phone:</strong> [PrimaryTelephoneNumber,fallback=Missing!]
+                            <strong>Chapter Roll #:</strong> [LocalIdentifierShort, fallback=Missing!]<br />
+                            <strong>Class Year:</strong> [classYear, fallback=Missing!]<br />
+                            <strong>Phone:</strong> [PrimaryTelephoneNumber, fallback=Missing!]
                           </p>
                           <p>
                             <strong>Mailing Address:</strong><br />
-                            [MailingAddressLine1,fallback=Missing!]<br />
+                            [MailingAddressLine1, fallback=Missing!]<br />
                             [if:MailingAddressLine2][MailingAddressLine2]<br />[endif]
                             [if:MailingCity][MailingCity], [MailingState] [MailingPostalCode][endif]
                           </p>

@@ -27,7 +27,7 @@ table {
   width: 100%; }
   table td {
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 1em;
     vertical-align: top; 
 }
 /* -------------------------------------
@@ -43,6 +43,7 @@ table {
   margin: 0 auto !important;
   /* makes it centered */
   max-width: 750px;
+  min-width: 500px;
   padding: 10px;
   width: 750px; 
 }
@@ -83,21 +84,22 @@ table {
     color: #999999;
     font-size: 12px;
     text-align: center; 
-}
+  }
 .newsletter-edition {
   text-align: center;
   font-weight: bold;
   color: #bababa;
 }
 .main-content {
-  width: 500px;
   padding-right: 1em;
 }
 .sidebar {
+  width: 225px;
   background-color: #f2f2f2;
-  font-size: 0.8em;
-  width: 250px;
 }
+  .sidebar p {
+    font-size: 0.8em;
+  }
   .sidebar .sidebar-block {
     border-radius: 5px;
     margin: 5px;
@@ -108,7 +110,7 @@ table {
     padding-top: 1em;
     background-color: #f9f9f9;
   }
-  .sidebar .sidebar-info-update h2 {
+  .sidebar .sidebar-info-update h3 {
     border-radius: 5px;
     padding: 4px;
     background-color: purple ;
@@ -257,7 +259,7 @@ hr {
 ------------------------------------- */
 @media only screen and (max-width: 620px) {
   table[class=body] h1 {
-    font-size: 28px !important;
+    font-size: 24px !important;
     margin-bottom: 10px !important; 
   }
   table[class=body] p,
