@@ -292,6 +292,13 @@ hr {
     border-color: #34495e !important; 
   } 
 }
+
+th.data-label {
+  vertical-align: text-top;
+  width: 150px;
+  text-align: left;
+}
+
 /* -------------------------------------
     VENDOR SPECIFIC TAGS
 ------------------------------------- */

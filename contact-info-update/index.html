@@ -36,7 +36,7 @@
                     <tr>
                       <td>
                         <multiline label='Main Message Body'>
-                        <p><strong>We want to stay in touch with you!</strong> The information below is from our membership records at SigEp National Headquarters, and it may be out of date if you have moved recently. <a href="https://directory.utmsigep.org/update-my-info/[ExternalIdentifier]/[UpdateToken]">Updating your information</a> ensures that you get the latest news from Tennessee Kappa, as well as receiving your copy of the <em>SigEp Journal</em> magazine.</p>
+                        <p><strong>We want to stay in touch with you!</strong> The information below is from the chapter's membership records at SigEp National Headquarters, and it may be out of date if you have moved recently. <a href="https://directory.utmsigep.org/update-my-info/[ExternalIdentifier]/[UpdateToken]">Updating your information</a> ensures that you get the latest news from Tennessee Kappa, as well as receiving your copy of <em>The SigEp Journal</em> magazine.</p>
                         <p>If you have any questions, simply reply to this email!</p>
                         </multiline>
                         <hr />
@@ -46,10 +46,26 @@
                           <tbody>
                             <tr>
                               <td colspan="2">
-                                <strong>Full Name:</strong> [FirstName1] [MiddleName] [LastName1]<br />
-                                <strong>Preferred Name:</strong> [PreferredName]<br />
-                                <strong>Chapter Roll #:</strong> [LocalIdentifierShort,fallback=Missing!]<br />
-                                <strong>Class Year:</strong> [classYear,fallback=Missing!]
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th class="data-label">Full Name:</th>
+                                      <td>[FirstName1] [MiddleName] [LastName1]</td>
+                                    </tr>
+                                    <tr>
+                                      <th class="data-label">Preferred Name:</th>
+                                      <td>[PreferredName]</td>
+                                    </tr>
+                                    <tr>
+                                      <th class="data-label">Chapter Roll #:</th>
+                                      <td>[LocalIdentifierShort,fallback=Missing!]</td>
+                                    </tr>
+                                    <tr>
+                                      <th class="data-label">Class Year:</th>
+                                      <td>[classYear,fallback=Missing!]</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                             <tr>
@@ -57,8 +73,18 @@
                             </tr>
                             <tr>
                               <td colspan="2">
-                                <strong><a href="https://donorbox.org/the-1901-club">1901 Club</a> Member:</strong>
-                                [ifmemberof:"Members|1901 Club Members"]Yes! Thank you for your support![else]Not yet, but you can <a href="https://donorbox.org/the-1901-club">join today</a>!.[endif]
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th class="data-label">Email Address:</th>
+                                      <td>[email,fallback=Missing!]</td>
+                                    </tr>
+                                    <tr>
+                                      <th class="data-label">Telephone Number:</th>
+                                      <td>[PrimaryTelephoneNumber,fallback=Missing!]</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                             <tr>
@@ -66,31 +92,65 @@
                             </tr>
                             <tr>
                               <td colspan="2">
-                                <strong>Mailing Address:</strong><br />
-                                [MailingAddressLine1,fallback=Missing!]<br />
-                                [if:MailingAddressLine2][MailingAddressLine2]<br />[endif]
-                                [if:MailingCity][MailingCity], [MailingState] [MailingPostalCode][endif]
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th class="data-label">1901 Club Member:</th>
+                                      <td>
+                                        [ifmemberof:"Members|1901 Club Members"]
+                                        ✅ Yes! Thank you for your support!
+                                        [else]
+                                        ❌ Not yet, but you can <a href="https://donorbox.org/the-1901-club">join today</a>!
+                                        [endif]
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
                               </td>
                             </tr>
                             <tr>
                               <td colspan="2"><hr /></td>
                             </tr>
                             <tr>
-                              <td>
-                                <strong>Primary Email Address:</strong><br />
-                                [email,fallback=Missing!]<br />
-                                <strong>Primary Telephone Number:</strong></br>
-                                [PrimaryTelephoneNumber,fallback=Missing!]
+                              <td colspan="2">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th class="data-label">Mailing Address:</th>
+                                      <td>
+                                        [MailingAddressLine1,fallback=Missing!]<br />
+                                        [if:MailingAddressLine2][MailingAddressLine2]<br />[endif]
+                                        [if:MailingCity][MailingCity], [MailingState] [MailingPostalCode][endif]
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><hr /></td>
+                            </tr>
+                            <tr colspan="2">
                               <td>
-                                <strong>Employer:</strong><br />
-                                [Employer,fallback=Missing!]<br />
-                                <strong>Job Title:</strong><br />
-                                [JobTitle,fallback=Missing!]<br />
-                                <strong>Occupation/Industry:</strong><br />
-                                [Occupation,fallback=Missing!]
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th class="data-label">Employer:</th>
+                                      <td>[Employer,fallback=Missing!]</td>
+                                    </tr>
+                                    <tr>
+                                      <th class="data-label">Job Title:</th>
+                                      <td>[JobTitle,fallback=Missing!]</td>
+                                    </tr>
+                                    <tr>
+                                      <th class="data-label">Occupation/Industry:</th>
+                                      <td>[Occupation,fallback=Missing!]</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
-                            </td>
+                            </tr>
                           </tbody>
                         </table>
                         <hr />
