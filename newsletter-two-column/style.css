@@ -297,6 +297,9 @@ hr {
     max-width: 100% !important;
     width: auto !important; 
   }
+  td.main-content, td.sidebar {
+    display: table-row;
+  }
 }
 /* -------------------------------------
     PRESERVE THESE STYLES IN THE HEAD
