@@ -114,16 +114,20 @@
                         [if:LocalIdentifier]
                         <div class="sidebar-block sidebar-info-update">
                           <h3 class="mb1">Your Member Record</h3>
+                          [ifmemberof:"Members|Alumni","Members|Undergraduates"]
                           <p>
                             <strong>Chapter Roll #:</strong> [LocalIdentifier,fallback=]<br />
                             <strong>Class Year:</strong> [ClassYear,fallback=Missing!]<br />
-                            <strong>Phone:</strong> [PrimaryTelephoneNumber,fallback=Missing!]
                           </p>
+                          [endif]
                           <p>
                             <strong>Mailing Address:</strong><br />
                             [MailingAddressLine1,fallback=Missing!]<br />
                             [if:MailingAddressLine2][MailingAddressLine2]<br />[endif]
                             [if:MailingCity][MailingCity], [MailingState] [MailingPostalCode][endif]
+                          </p>
+                          <p>
+                            <strong>Phone:</strong> [PrimaryTelephoneNumber,fallback=Missing!]
                           </p>
                           <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                             <tbody>
