@@ -51,8 +51,8 @@
                             <singleline label="Heading"><h2 class="mb1">Heading</h2></singleline>
                             <multiline label="Body Text">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                              <hr />
                             </multiline>
+                            <hr />
                           </layout>
                           <layout label="Left Photo">
                             <singleline label="Heading"><h2 class="mb1">Heading</h2></singleline>
@@ -75,10 +75,17 @@
                             <singleline label="Heading"><h2 class="mb1">Heading</h2></singleline>
                             <multiline label="Body Text">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                              <hr />
                             </multiline>
+                            <hr />
                           </layout>
                         </repeater>
+                        <div class="social-media-link-container">
+                          <a href="https://utmartin.sigep.org/" class="social-media-link"><img src="images/link.png" width="32" height="32" alt="Website"></a>
+                          <a href="https://www.facebook.com/utmsigep" class="social-media-link"><img src="images/facebook.png" width="32" height="32" alt="Facebook"></a>
+                          <a href="https://twitter.com/utmsigep" class="social-media-link"><img src="images/twitter.png" width="32" height="32" alt="Twitter"></a>
+                          <a href="https://www.instagram.com/utm_sigep" class="social-media-link"><img src="images/instagram.png" width="32" height="32" alt="Instagram"></a>
+                          <a href="https://www.linkedin.com/company/tennessee-kappa-avc" class="social-media-link"><img src="images/linkedin.png" width="32" height="32" alt="LinkedIn"></a>
+                        </div>
                       </td>
                       <td class="sidebar">
                         <repeater>
@@ -104,17 +111,17 @@
                           </div>
                         </layout>
                         </repeater>
-                        [if:ExternalIdentifier]
+                        [if:LocalIdentifier]
                         <div class="sidebar-block sidebar-info-update">
                           <h3 class="mb1">Your Member Record</h3>
                           <p>
-                            <strong>Chapter Roll #:</strong> [LocalIdentifier=Missing!]<br />
-                            <strong>Class Year:</strong> [classYear=Missing!]<br />
-                            <strong>Phone:</strong> [PrimaryTelephoneNumber=Missing!]
+                            <strong>Chapter Roll #:</strong> [LocalIdentifier,fallback=]<br />
+                            <strong>Class Year:</strong> [ClassYear,fallback=Missing!]<br />
+                            <strong>Phone:</strong> [PrimaryTelephoneNumber,fallback=Missing!]
                           </p>
                           <p>
                             <strong>Mailing Address:</strong><br />
-                            [MailingAddressLine1=Missing!]<br />
+                            [MailingAddressLine1,fallback=Missing!]<br />
                             [if:MailingAddressLine2][MailingAddressLine2]<br />[endif]
                             [if:MailingCity][MailingCity], [MailingState] [MailingPostalCode][endif]
                           </p>
@@ -149,7 +156,7 @@
             <div class="footer">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td class="content-block">
+                  <td class="content-block">                  
                     <span class="apple-link">Tennessee Kappa Alumni &amp; Volunteer Corp.
                     <br />PO Box 60901, Nashville TN 37206-0901</span>
                     <br />
