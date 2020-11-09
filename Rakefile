@@ -34,7 +34,13 @@ task :update do
   templates.each do |t|
     template = CreateSend::Template.new auth, t[:id]
     puts "Updating #{t[:name]} ..."
-    template.update(t[:name], "#{baseurl}/#{t[:path]}/index.html?raw=1", "#{baseurl}/#{t[:path]}/#{t[:path]}-assets.zip?raw=1")
+    begin
+      template.update(t[:name], "#{baseurl}/#{t[:path]}/index.html?raw=1", "#{baseurl}/#{t[:path]}/#{t[:path]}-assets.zip?raw=1")
+    rescue => error
+      puts error
+      puts "Index file: #{baseurl}/#{t[:path]}/index.html?raw=1"
+      puts "Zip file: #{baseurl}/#{t[:path]}/#{t[:path]}-assets.zip?raw=1"
+    end
   end
   puts "Done!"
 end
