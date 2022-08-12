@@ -10,7 +10,7 @@ Dotenv.load
 # Configuration
 api_key = ENV['CAMPAIGN_MONITOR_API_KEY']
 client_id = ENV['CAMPAIGN_MONITOR_CLIENT_ID']
-baseurl = 'https://github.com/utmsigep/utmsigep-email-templates/blob/master'
+baseurl = 'https://github.com/utmsigep/utmsigep-email-templates/blob/main'
 basepath = Dir.pwd
 
 task default: %w[build]
